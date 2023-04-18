@@ -1,0 +1,131 @@
+.todo
+{
+    height: 65%;
+    width: 40%;
+}
+
+.innerdiv
+{
+height:20%;
+display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    
+}
+
+.innerthirddiv
+{
+height:60%;
+}
+
+
+.innerthirddiv
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.createTask
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 10%;
+    width: 90%;
+    font-weight: 600;
+    font-family: emoji;
+    font-size: 0.8rem;
+}
+
+.Dynamictask
+{
+    
+    height: 10%;
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+
+}
+.Dynamictask::-webkit-scrollbar {
+    display: none;
+  }
+
+.Dynamictaskinside
+{
+  
+    border: 1px solid #222731;
+    height: 17%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222731;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    padding: 0;
+    transform-origin: top left;
+    white-space: nowrap;
+   
+   
+
+}
+.Textfield
+{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.firstTask
+{
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-weight: 900;
+    opacity: 0.6;
+}
+.Search-Paper{
+    display: flex;
+    background-color: rgb(98, 86, 192)!important;
+    justify-content: space-between;
+    padding: 0% 1%;
+    width: 84%;
+    height: 8%;
+    /* height: 3rem; */
+    text-align: center;
+    border-radius: 6px!important;
+    margin-left: 6%;
+    box-shadow: none!important;
+    border: 1px solid #000000;
+    color:"black"
+}
+.Search-Icon{
+    color: #000000;
+  }
+  .todo div
+ {
+border-color: #ffffff!important;
+}
+
+.MuiSelect-select
+{
+    background-color: #ffffff!important;
+
+}

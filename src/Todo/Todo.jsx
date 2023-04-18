@@ -44,7 +44,7 @@ const Todo = () => {
   const fetchData = async () => {
     setLoading(false);
 
-    let myTasks = await fetchApi("GET", `https://dark-rose-monkey-coat.cyclic.app/TodoApp/task`);
+    let myTasks = await fetchApi("GET", `${process.env.REACT_APP_API_URL}`);
     setUserFixedData(myTasks.Data)
     setAllTask(myTasks.Data);
     setDropdowndata(myTasks.Data);
@@ -82,7 +82,7 @@ const Todo = () => {
       completed: false,
     };
 
-    fetchApi("POST", `https://dark-rose-monkey-coat.cyclic.app/TodoApp/task`, payload)
+    fetchApi("POST", `${process.env.REACT_APP_API_URL}`, payload)
       .then(() => {
         alert("Task Created successfully");
         window.location.reload();
@@ -98,7 +98,7 @@ const Todo = () => {
   const Updateandsend = async (id) => {
     let result = await fetchApi(
       "GET",
-      `https://dark-rose-monkey-coat.cyclic.app/TodoApp/task/${id}`
+      `${process.env.REACT_APP_API_URL}/${id}`
     );
 
   
@@ -119,7 +119,7 @@ const Todo = () => {
 
     await fetchApi(
       "PUT",
-      `https://dark-rose-monkey-coat.cyclic.app/TodoApp/task/update/${id}`,
+      `${process.env.REACT_APP_API_URL}/update/${id}`,
       payload
     ).then(() => {
       alert(message);
@@ -349,7 +349,7 @@ const Todo = () => {
                               onClick={() =>
                                 fetchApi(
                                   "DELETE",
-                                  `https://dark-rose-monkey-coat.cyclic.app/TodoApp/task/delete/${data._id}`
+                                  `${process.env.REACT_APP_API_URL}/delete/${data._id}`
                                 )
                                   .then(() => {
                                     alert("Task deleted successfully");

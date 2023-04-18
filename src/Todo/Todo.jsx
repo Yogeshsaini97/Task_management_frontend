@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 
+import TaskOutlinedIcon from '@mui/icons-material/TaskOutlined';
+
 import { fetchApi} from "../Controller/Controller.jsx";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import CheckIcon from "@mui/icons-material/Check";
@@ -236,7 +238,7 @@ const Todo = () => {
   </Select>
 </FormControl>
           <div className="innerdiv" style={{ color: "#6256c0" }}>
-            <div style={{ color: "#0092cd" }}>to</div>do
+            <div style={{ color: "#0092cd" }}>task-</div>Management<TaskOutlinedIcon/>
           </div>
           <div className="innerdiv">
             {" "}
